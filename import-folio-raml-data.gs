@@ -207,15 +207,20 @@ function propsToRows(modName, intName, ldpName, props, prefix) {
       
       if (propValue["type"] == "object") {
         var newProps = propValue["properties"];
+        console.log(newProps);
         if (newProps) {
           var newPropArray = propsToRows(modName, intName, ldpName, newProps, propName);
           propArray = propArray.concat(newPropArray);
         }
       } else if (propValue["type"] == "array" ) {
-        var itemProps = propValue["items"]["properties"];
-        if (itemProps) {
-          var newPropArray = propsToRows(modName, intName, ldpName, itemProps, propName);
-          propArray = propArray.concat(newPropArray);
+        console.log("propName: " + propName + "\npropValue Type: " + propValue["type"] + "\npropValue items: " + propValue["items"]);
+        console.log("has properties? " + propValue.hasOwnProperty('items'));
+        if ('items' in propValue) {
+          if ('properties' in propValue["items"]) {
+            var itemProps = propValue["items"]["properties"];
+            var newPropArray = propsToRows(modName, intName, ldpName, itemProps, propName);
+            propArray = propArray.concat(newPropArray);
+          }
         }
       }
     }
