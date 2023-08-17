@@ -155,7 +155,7 @@ function parseRAMLtriggered() {
       // Call the propsToRows() function, which takes some of the information
       // from the first tab and the JSON object containing the properties and
       // returns the parsed data in an array of arrays.
-      var propRows = propsToRows(modName, intName, ldpName, oneRAML, '');
+      var propRows = propsToRows(modName, intName, ldpName, oneRAML, ramlURL, '');
       
       // Add the tabular form of the properties to the same array with the subheading.
       propArray = propArray.concat(propRows);
@@ -247,7 +247,7 @@ function getAllProps(ramlURL) {
 }
 
 
-function propsToRows(modName, intName, ldpName, props, prefix) {
+function propsToRows(modName, intName, ldpName, props, ramlPath, prefix) {
 
   // The JSON properties object is passed into this function, along with
   // other table information and an optional prefix. This function is
@@ -286,6 +286,46 @@ function propsToRows(modName, intName, ldpName, props, prefix) {
 
       var propValue = propValues[j];
 
+      if ('$ref' in propValue) {
+
+        // Some schemas have references to common files stored elsewhere. An example is the
+        // metadata object included in almost every FOLIO record.
+
+        // If we find a $ref key in the property information, we should try to follow that
+        // path to get the additional property information that is stored in that other file.
+
+        // The path included in $ref might be relative to the schema's current location, so
+        // we may need to generate the path to the $ref file from the original RAML URL.
+
+        var ramlDir = ramlPath.substring(0, ramlPath.lastIndexOf("/")+1);
+        var refURL = ramlDir + propValue["$ref"]
+
+        // However, if the $ref path includes "raml-util", that's pointing to another repository
+        // just called folio-org/raml. We can discard most of the path info and just add the
+        // final directory and file name to the default branch of the folio-org/raml repository.
+
+        if (propValue["$ref"].search("raml-util") != -1) {
+          // need to clean up extra path information, and then "raml-util" 
+          // can be replaced with "https://raw.githubusercontent.com/folio-org/raml/raml1.0"
+          refURL = propValue["$ref"].replace("../","").replace("../../","").replace("/raml-util","raml-util").replace("raml-util","https://raw.githubusercontent.com/folio-org/raml/raml1.0")
+        }
+        
+        console.log("fetching $ref URL: " + refURL);
+  
+        var response = UrlFetchApp.fetch(refURL, {'muteHttpExceptions': true});
+        //Logger.log(response);
+        
+        var json = response.getContentText();
+        var data = JSON.parse(json);
+        //Logger.log(data);
+
+        // If everything has gone well and we were able to fetch the property info from the
+        // $ref and parse it as JSON, we can just use that data instead of the original
+        // propValue data.
+        propValue = data;
+
+      }
+
       // build an array for the spreadsheet row, combining tab 1 info with the name, 
       // type, and description of the current property. add this row to the storage array.
       var newRow = [[modName, intName, ldpName, propName, propValue["type"], propValue["description"]]];
@@ -306,7 +346,7 @@ function propsToRows(modName, intName, ldpName, props, prefix) {
         var newProps = propValue["properties"];
         //console.log(newProps);
         if (newProps) {
-          var newPropArray = propsToRows(modName, intName, ldpName, newProps, propName);
+          var newPropArray = propsToRows(modName, intName, ldpName, newProps, ramlPath, propName);
           propArray = propArray.concat(newPropArray);
         }
       } else if (propValue["type"] == "array" ) {
@@ -321,7 +361,7 @@ function propsToRows(modName, intName, ldpName, props, prefix) {
         if ('items' in propValue) {
           if ('properties' in propValue["items"]) {
             var itemProps = propValue["items"]["properties"];
-            var newPropArray = propsToRows(modName, intName, ldpName, itemProps, propName);
+            var newPropArray = propsToRows(modName, intName, ldpName, itemProps, ramlPath, propName);
             propArray = propArray.concat(newPropArray);
           }
         }
