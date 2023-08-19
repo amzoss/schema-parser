@@ -1,5 +1,5 @@
 ---
-title: Documentation: <a href='finance_groups.md'>finance_groups</a>
+title: Documentation&#58; <a href='finance_groups.md'>finance_groups</a>
 ---
 ## Source:
 

@@ -1,5 +1,5 @@
 ---
-title: Documentation: <a href='course_roles.md'>course_roles</a>
+title: Documentation&#58; <a href='course_roles.md'>course_roles</a>
 ---
 ## Source:
 

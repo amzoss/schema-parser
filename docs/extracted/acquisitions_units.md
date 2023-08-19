@@ -1,5 +1,5 @@
 ---
-title: Documentation: <a href='acquisitions_units.md'>acquisitions_units</a>
+title: Documentation&#58; <a href='acquisitions_units.md'>acquisitions_units</a>
 ---
 ## Source:
 

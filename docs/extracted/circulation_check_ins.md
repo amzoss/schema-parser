@@ -1,5 +1,5 @@
 ---
-title: Documentation: <a href='circulation_check_ins.md'>circulation_check_ins</a>
+title: Documentation&#58; <a href='circulation_check_ins.md'>circulation_check_ins</a>
 ---
 ## Source:
 

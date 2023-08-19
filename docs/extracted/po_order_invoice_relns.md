@@ -1,5 +1,5 @@
 ---
-title: Documentation: <a href='po_order_invoice_relns.md'>po_order_invoice_relns</a>
+title: Documentation&#58; <a href='po_order_invoice_relns.md'>po_order_invoice_relns</a>
 ---
 ## Source:
 

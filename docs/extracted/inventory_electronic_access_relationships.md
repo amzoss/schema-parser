@@ -1,5 +1,5 @@
 ---
-title: Documentation: <a href='inventory_electronic_access_relationships.md'>inventory_electronic_access_relationships</a>
+title: Documentation&#58; <a href='inventory_electronic_access_relationships.md'>inventory_electronic_access_relationships</a>
 ---
 ## Source:
 

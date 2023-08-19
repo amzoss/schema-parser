@@ -1,5 +1,5 @@
 ---
-title: Documentation: <a href='inventory_modes_of_issuance.md'>inventory_modes_of_issuance</a>
+title: Documentation&#58; <a href='inventory_modes_of_issuance.md'>inventory_modes_of_issuance</a>
 ---
 ## Source:
 

@@ -1,5 +1,5 @@
 ---
-title: Documentation: <a href='user_groups.md'>user_groups</a>
+title: Documentation&#58; <a href='user_groups.md'>user_groups</a>
 ---
 ## Source:
 

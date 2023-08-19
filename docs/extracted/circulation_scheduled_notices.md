@@ -1,5 +1,5 @@
 ---
-title: Documentation: <a href='circulation_scheduled_notices.md'>circulation_scheduled_notices</a>
+title: Documentation&#58; <a href='circulation_scheduled_notices.md'>circulation_scheduled_notices</a>
 ---
 ## Source:
 

@@ -1,5 +1,5 @@
 ---
-title: Documentation: <a href='finance_group_fund_fiscal_years.md'>finance_group_fund_fiscal_years</a>
+title: Documentation&#58; <a href='finance_group_fund_fiscal_years.md'>finance_group_fund_fiscal_years</a>
 ---
 ## Source:
 

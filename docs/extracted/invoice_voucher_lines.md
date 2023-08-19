@@ -1,5 +1,5 @@
 ---
-title: Documentation: <a href='invoice_voucher_lines.md'>invoice_voucher_lines</a>
+title: Documentation&#58; <a href='invoice_voucher_lines.md'>invoice_voucher_lines</a>
 ---
 ## Source:
 
