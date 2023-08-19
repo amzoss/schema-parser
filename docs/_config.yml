@@ -1,7 +1,3 @@
 theme: minima
 header_pages:
   - extracted/index.md
-skin: auto
-author: [FOLIO Reporting SIG](http://wiki.folio.org/display/RPT/)
-description: Scripts that build documentation pages for LDP1 and Metadb extracted and derived tables.
-  
