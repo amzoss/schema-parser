@@ -65,7 +65,7 @@ ermProps    = None
 #                                                                             #
 ###############################################################################
 
-# TO DO: would be good to catch an exception for JSON.parse,
+# TO DO: would be good to catch an exception for json.loads,
 # but should it happen in this function? where this function
 # gets called? both? maybe this doesn't need to be a function?
 
@@ -371,7 +371,7 @@ if response.status_code == 200:
             # tab of the Google Sheet. The first element added to the array is a subheading 
             # row, which presents basic table info from the first spreadsheet tab. 
             
-            propArray = [[modName, intName, ldpName, '', '', '']]
+            #propArray = [[modName, intName, ldpName, '', '', '']]
             
             # Call the propsToRows() function, which takes some of the information
             # from the first tab and the JSON object containing the properties and
@@ -402,7 +402,7 @@ if response.status_code == 200:
             
             #print(newRows)
 
-            newRows.extend([[modName, intName, ldpName, '', '', '']])
+            #newRows.extend([[modName, intName, ldpName, '', '', '']])
 
             #print(newRows)
 
