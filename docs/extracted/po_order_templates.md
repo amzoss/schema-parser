@@ -1,5 +1,5 @@
 ---
-title: Documentation: <a href='po_order_templates.md'>po_order_templates</a>
+title: Documentation&#58; <a href='po_order_templates.md'>po_order_templates</a>
 ---
 ## Source:
 

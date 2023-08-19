@@ -1,5 +1,5 @@
 ---
-title: Documentation: <a href='audit_acquisition_order.md'>audit_acquisition_order</a>
+title: Documentation&#58; <a href='audit_acquisition_order.md'>audit_acquisition_order</a>
 ---
 ## Source:
 

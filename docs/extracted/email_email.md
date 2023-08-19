@@ -1,5 +1,5 @@
 ---
-title: Documentation: <a href='email_email.md'>email_email</a>
+title: Documentation&#58; <a href='email_email.md'>email_email</a>
 ---
 ## Source:
 

@@ -1,5 +1,5 @@
 ---
-title: Documentation: <a href='erm_agreements_package.md'>erm_agreements_package</a>
+title: Documentation&#58; <a href='erm_agreements_package.md'>erm_agreements_package</a>
 ---
 ## Source:
 

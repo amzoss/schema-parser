@@ -1,5 +1,5 @@
 ---
-title: Documentation: <a href='patron_blocks_user_summary.md'>patron_blocks_user_summary</a>
+title: Documentation&#58; <a href='patron_blocks_user_summary.md'>patron_blocks_user_summary</a>
 ---
 ## Source:
 

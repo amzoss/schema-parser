@@ -1,5 +1,5 @@
 ---
-title: Documentation: <a href='perm_permissions.md'>perm_permissions</a>
+title: Documentation&#58; <a href='perm_permissions.md'>perm_permissions</a>
 ---
 ## Source:
 

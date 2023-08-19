@@ -1,5 +1,5 @@
 ---
-title: Documentation: <a href='inventory_contributor_types.md'>inventory_contributor_types</a>
+title: Documentation&#58; <a href='inventory_contributor_types.md'>inventory_contributor_types</a>
 ---
 ## Source:
 

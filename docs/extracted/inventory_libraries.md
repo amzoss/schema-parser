@@ -1,5 +1,5 @@
 ---
-title: Documentation: <a href='inventory_libraries.md'>inventory_libraries</a>
+title: Documentation&#58; <a href='inventory_libraries.md'>inventory_libraries</a>
 ---
 ## Source:
 

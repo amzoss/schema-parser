@@ -1,5 +1,5 @@
 ---
-title: Documentation: <a href='organization_contacts.md'>organization_contacts</a>
+title: Documentation&#58; <a href='organization_contacts.md'>organization_contacts</a>
 ---
 ## Source:
 

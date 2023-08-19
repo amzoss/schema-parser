@@ -1,5 +1,5 @@
 ---
-title: Documentation: <a href='inventory_item_damaged_statuses.md'>inventory_item_damaged_statuses</a>
+title: Documentation&#58; <a href='inventory_item_damaged_statuses.md'>inventory_item_damaged_statuses</a>
 ---
 ## Source:
 

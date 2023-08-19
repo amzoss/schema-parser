@@ -1,5 +1,5 @@
 ---
-title: Documentation: <a href='inventory_nature_of_content_terms.md'>inventory_nature_of_content_terms</a>
+title: Documentation&#58; <a href='inventory_nature_of_content_terms.md'>inventory_nature_of_content_terms</a>
 ---
 ## Source:
 

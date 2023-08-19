@@ -1,5 +1,5 @@
 ---
-title: Documentation: <a href='template_engine_template.md'>template_engine_template</a>
+title: Documentation&#58; <a href='template_engine_template.md'>template_engine_template</a>
 ---
 ## Source:
 

@@ -1,5 +1,5 @@
 ---
-title: Documentation: <a href='inventory_service_points.md'>inventory_service_points</a>
+title: Documentation&#58; <a href='inventory_service_points.md'>inventory_service_points</a>
 ---
 ## Source:
 

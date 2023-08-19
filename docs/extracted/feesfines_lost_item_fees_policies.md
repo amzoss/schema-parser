@@ -1,5 +1,5 @@
 ---
-title: Documentation: <a href='feesfines_lost_item_fees_policies.md'>feesfines_lost_item_fees_policies</a>
+title: Documentation&#58; <a href='feesfines_lost_item_fees_policies.md'>feesfines_lost_item_fees_policies</a>
 ---
 ## Source:
 

@@ -1,5 +1,5 @@
 ---
-title: Documentation: <a href='feesfines_payments.md'>feesfines_payments</a>
+title: Documentation&#58; <a href='feesfines_payments.md'>feesfines_payments</a>
 ---
 ## Source:
 

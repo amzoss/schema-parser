@@ -1,5 +1,5 @@
 ---
-title: Documentation: <a href='erm_agreements_entitlement.md'>erm_agreements_entitlement</a>
+title: Documentation&#58; <a href='erm_agreements_entitlement.md'>erm_agreements_entitlement</a>
 ---
 ## Source:
 

@@ -1,5 +1,5 @@
 ---
-title: Documentation: <a href='inventory_loan_types.md'>inventory_loan_types</a>
+title: Documentation&#58; <a href='inventory_loan_types.md'>inventory_loan_types</a>
 ---
 ## Source:
 

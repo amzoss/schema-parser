@@ -1,5 +1,5 @@
 ---
-title: Documentation: <a href='finance_fund_types.md'>finance_fund_types</a>
+title: Documentation&#58; <a href='finance_fund_types.md'>finance_fund_types</a>
 ---
 ## Source:
 
