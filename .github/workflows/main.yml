@@ -8,3 +8,4 @@ jobs:
       - uses: py-actions/py-dependency-install@v4
         with:
           path: "requirements.txt"
+      - run: python python/extracted_table_docs.py
