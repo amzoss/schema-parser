@@ -1,5 +1,5 @@
 ---
-title: Documentation&#58; <a href='inventory_bound_with_part.md'>inventory_bound_with_part</a>
+title: inventory_bound_with_part
 ---
 ## Source:
 

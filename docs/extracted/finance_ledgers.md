@@ -1,5 +1,5 @@
 ---
-title: Documentation&#58; <a href='finance_ledgers.md'>finance_ledgers</a>
+title: finance_ledgers
 ---
 ## Source:
 

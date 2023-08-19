@@ -1,5 +1,5 @@
 ---
-title: Documentation&#58; <a href='erm_agreements_coverage_statement.md'>erm_agreements_coverage_statement</a>
+title: erm_agreements_coverage_statement
 ---
 ## Source:
 

@@ -1,5 +1,5 @@
 ---
-title: Documentation&#58; <a href='acquisition_method.md'>acquisition_method</a>
+title: acquisition_method
 ---
 ## Source:
 

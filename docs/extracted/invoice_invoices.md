@@ -1,5 +1,5 @@
 ---
-title: Documentation&#58; <a href='invoice_invoices.md'>invoice_invoices</a>
+title: invoice_invoices
 ---
 ## Source:
 

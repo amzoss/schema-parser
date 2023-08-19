@@ -1,5 +1,5 @@
 ---
-title: Documentation&#58; <a href='inventory_call_number_types.md'>inventory_call_number_types</a>
+title: inventory_call_number_types
 ---
 ## Source:
 

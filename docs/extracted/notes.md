@@ -1,5 +1,5 @@
 ---
-title: Documentation&#58; <a href='notes.md'>notes</a>
+title: notes
 ---
 ## Source:
 

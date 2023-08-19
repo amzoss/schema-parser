@@ -1,5 +1,5 @@
 ---
-title: Documentation&#58; <a href='feesfines_transfer_criterias.md'>feesfines_transfer_criterias</a>
+title: feesfines_transfer_criterias
 ---
 ## Source:
 

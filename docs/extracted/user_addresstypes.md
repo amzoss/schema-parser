@@ -1,5 +1,5 @@
 ---
-title: Documentation&#58; <a href='user_addresstypes.md'>user_addresstypes</a>
+title: user_addresstypes
 ---
 ## Source:
 

@@ -1,5 +1,5 @@
 ---
-title: Documentation&#58; <a href='feesfines_manualblocks.md'>feesfines_manualblocks</a>
+title: feesfines_manualblocks
 ---
 ## Source:
 

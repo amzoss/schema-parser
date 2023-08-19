@@ -1,5 +1,5 @@
 ---
-title: Documentation&#58; <a href='inventory_statistical_codes.md'>inventory_statistical_codes</a>
+title: inventory_statistical_codes
 ---
 ## Source:
 

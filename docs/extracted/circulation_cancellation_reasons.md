@@ -1,5 +1,5 @@
 ---
-title: Documentation&#58; <a href='circulation_cancellation_reasons.md'>circulation_cancellation_reasons</a>
+title: circulation_cancellation_reasons
 ---
 ## Source:
 

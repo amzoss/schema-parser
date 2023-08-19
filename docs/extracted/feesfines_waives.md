@@ -1,5 +1,5 @@
 ---
-title: Documentation&#58; <a href='feesfines_waives.md'>feesfines_waives</a>
+title: feesfines_waives
 ---
 ## Source:
 

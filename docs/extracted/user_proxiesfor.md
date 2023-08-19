@@ -1,5 +1,5 @@
 ---
-title: Documentation&#58; <a href='user_proxiesfor.md'>user_proxiesfor</a>
+title: user_proxiesfor
 ---
 ## Source:
 

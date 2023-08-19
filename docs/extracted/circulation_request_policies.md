@@ -1,5 +1,5 @@
 ---
-title: Documentation&#58; <a href='circulation_request_policies.md'>circulation_request_policies</a>
+title: circulation_request_policies
 ---
 ## Source:
 

@@ -1,5 +1,5 @@
 ---
-title: Documentation&#58; <a href='finance_expense_classes.md'>finance_expense_classes</a>
+title: finance_expense_classes
 ---
 ## Source:
 

@@ -1,5 +1,5 @@
 ---
-title: Documentation&#58; <a href='configuration_entries.md'>configuration_entries</a>
+title: configuration_entries
 ---
 ## Source:
 

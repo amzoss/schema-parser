@@ -1,5 +1,5 @@
 ---
-title: Documentation&#58; <a href='circulation_fixed_due_date_schedules.md'>circulation_fixed_due_date_schedules</a>
+title: circulation_fixed_due_date_schedules
 ---
 ## Source:
 

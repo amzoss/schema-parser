@@ -1,5 +1,5 @@
 ---
-title: Documentation&#58; <a href='circulation_loan_policies.md'>circulation_loan_policies</a>
+title: circulation_loan_policies
 ---
 ## Source:
 

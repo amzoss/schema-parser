@@ -1,5 +1,5 @@
 ---
-title: Documentation&#58; <a href='course_processingstatuses.md'>course_processingstatuses</a>
+title: course_processingstatuses
 ---
 ## Source:
 

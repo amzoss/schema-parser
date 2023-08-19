@@ -1,5 +1,5 @@
 ---
-title: Documentation&#58; <a href='acquisitions_memberships.md'>acquisitions_memberships</a>
+title: acquisitions_memberships
 ---
 ## Source:
 

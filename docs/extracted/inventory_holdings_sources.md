@@ -1,5 +1,5 @@
 ---
-title: Documentation&#58; <a href='inventory_holdings_sources.md'>inventory_holdings_sources</a>
+title: inventory_holdings_sources
 ---
 ## Source:
 

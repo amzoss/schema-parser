@@ -1,5 +1,5 @@
 ---
-title: Documentation&#58; <a href='po_alerts.md'>po_alerts</a>
+title: po_alerts
 ---
 ## Source:
 

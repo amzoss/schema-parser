@@ -1,5 +1,5 @@
 ---
-title: Documentation&#58; <a href='finance_fiscal_years.md'>finance_fiscal_years</a>
+title: finance_fiscal_years
 ---
 ## Source:
 

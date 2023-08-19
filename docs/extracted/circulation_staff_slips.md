@@ -1,5 +1,5 @@
 ---
-title: Documentation&#58; <a href='circulation_staff_slips.md'>circulation_staff_slips</a>
+title: circulation_staff_slips
 ---
 ## Source:
 
