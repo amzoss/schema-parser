@@ -65,6 +65,103 @@ ermProps    = None
 #                                                                             #
 ###############################################################################
 
+def create_markdown_files_extracted(table_names, full_df, desired_columns):
+
+    combined_title  = "---\n" + "title: Extracted Table Documentation" + "\n---\n"
+    combined_h1     = "# Extracted Table Documentation\n\n"
+    combined_tables = combined_title + combined_h1
+
+
+
+    ###############################################################################
+    #                                                                             #
+    # Markdown output as file for each table                                      #
+    #                                                                             #
+    ###############################################################################
+
+    # Create the files for each table inside the table list
+    for tbl in table_names:
+
+        """
+        The loop go through the table name list. 
+        To get the content for the specific table from the DataFrame, you have to compare 
+        the table name from the table name list with the table name in the 
+        DataFrame.
+        """
+
+        headers         = full_df.loc[full_df['LDP Table Name'] == tbl,:].drop(columns=desired_columns).drop_duplicates()
+
+        modName         = headers["Module Name"].to_string(index=False)
+        intName         = headers["Interface Name"].to_string(index=False)
+        
+        # Create a DataFrame for the content from the specific table
+        tbl_df          = full_df[desired_columns][full_df['LDP Table Name'] == tbl]
+        
+        ###############################################################################
+        #                                                                             #
+        # Template for individual pages                                               #
+        #                                                                             #
+        ###############################################################################     
+
+        # Section header
+        title           = "---\n" + "title: " + tbl   + "\n---\n"
+        h1              = "# Documentation: [" + tbl   + "](" + tbl + ".md)\n\n"
+
+        # Section source
+        h2_source       = "## Source:\n\n"
+        p_source        = "Module: " + modName + "\n\n" + "Interface: " + intName + "\n\n"
+        
+        # Section table
+        h2_attr         = "## Attributes:\n\n"
+        markdown_table  = tbl_df.fillna('').to_markdown(index=False)
+
+
+        ###############################################################################
+        #                                                                             #
+        # Template for combined page                                                  #
+        #                                                                             #
+        ###############################################################################     
+
+        # Section header
+        h2              = "## Documentation: [" + tbl   + "](" + tbl + ".md)\n\n"
+
+        # Section source
+        h3_source       = "### Source:\n\n"
+        p_source        = "Module: " + modName + "\n\n" + "Interface: " + intName + "\n\n"
+        
+        # Section table
+        h3_attr         = "### Attributes:\n\n"
+        markdown_table  = tbl_df.fillna('').to_markdown(index=False)
+
+
+        ###############################################################################
+        #                                                                             #
+        # Combine all components from templates                                       #
+        #                                                                             #
+        ###############################################################################        
+
+        indiv_output_string = title + h1 + h2_source + p_source + h2_attr + markdown_table + "\n\n"
+
+        combined_output_string = h2 + h3_source + p_source + h3_attr + markdown_table + "\n\n"
+
+        ###############################################################################
+        #                                                                             #
+        # Create file on system                                                       #
+        #                                                                             #
+        ############################################################################### 
+
+        combined_tables = combined_tables + combined_output_string
+        
+        file_name = "docs/extracted/" + tbl + ".md"
+        md_file   = open(file_name, "w")
+        md_file.write(indiv_output_string)
+        md_file.close()
+    
+    full_file_name = "docs/extracted/index.md"
+    full_md_file   = open(full_file_name, "w")
+    full_md_file.write(combined_tables)
+    full_md_file.close()
+
 # TO DO: would be good to catch an exception for json.loads,
 # but should it happen in this function? where this function
 # gets called? both? maybe this doesn't need to be a function?
@@ -103,7 +200,7 @@ def getAllProps(ramlURL):
 
 def grabERMdocs():
 
-    print("Grabbing ERM docs")
+    #print("Grabbing ERM docs")
 
     # A special .tsv file was created to descript the ERM tables. Parse it into a dict
     # that can be used to look up the correct row information for each interface.
@@ -149,7 +246,7 @@ def propsToRows(modName, intName, ldpName, props, ramlPath, prefix):
     # is used during recursion to keep track of what level the parser
     # is at.
 
-    print("propsToRows: " + ldpName + ", " + prefix)
+    #print("propsToRows: " + ldpName + ", " + prefix)
 
     # create an array to store a row for each property
     propArray = []
@@ -194,7 +291,7 @@ def propsToRows(modName, intName, ldpName, props, ramlPath, prefix):
                 # can be replaced with "https://raw.githubusercontent.com/folio-org/raml/raml1.0"
                 refURL = propValue["$ref"].replace("../","").replace("../../","").replace("/raml-util","raml-util").replace("raml-util","https://raw.githubusercontent.com/folio-org/raml/raml1.0")
             
-            #print("fetching $ref URL: " + refURL)
+            print("fetching $ref URL: " + refURL)
 
             response = requests.get(refURL)
 
@@ -274,173 +371,155 @@ def propsToRows(modName, intName, ldpName, props, ramlPath, prefix):
 #                                                                             #
 ###############################################################################
 
-# Prepare string for the url source
-url      = 'https://raw.githubusercontent.com/amzoss/schema-parser/main/data/csv/RAMLdirectory.csv'
+csv_data = pd.read_csv("data/csv/RAMLdirectory.csv")
+#print(csv_data)
 
-# Fetch data from the server and save it in the object "response"
-response = requests.get(url)
+# Call the grabERMdocs() function to pull data for ERM tables using
+# a different method. Store the results in a variable called ermProps.
 
-# If the connection is established
-if response.status_code == 200:
+ermProps = grabERMdocs()
 
-    # Call the grabERMdocs() function to pull data for ERM tables using
-    # a different method. Store the results in a variable called ermProps.
+###############################################################################
+#                                                                             #
+# Fetch and parse RAML data using csv data                                    #
+#                                                                             #
+###############################################################################
 
-    ermProps = grabERMdocs()
+#print("starting the parse")
 
-    # Create a DataFrame with pandas for the data from the server
-    csv_data = pd.read_csv(StringIO(response.text), sep=",")
-    #print(csv_data)
+# This function takes on the bulk of the work to retrieve the 
+# schema information, parse it into a table, and push it to
+# the second tab of the spreadsheet.
 
-    ###############################################################################
-    #                                                                             #
-    # Fetch and parse RAML data using csv data                                    #
-    #                                                                             #
-    ###############################################################################
-
-    print("starting the parse")
-
-    # This function takes on the bulk of the work to retrieve the 
-    # schema information, parse it into a table, and push it to
-    # the second tab of the spreadsheet.
-
-    # There are many calls to Logger.log() to keep track of the 
-    # progress of the script. Just open the "Execution log" to 
-    # see the messages.
+# There are many calls to Logger.log() to keep track of the 
+# progress of the script. Just open the "Execution log" to 
+# see the messages.
 
 
-    # First, grab the data from the first tab of the spreadsheet
-    # and store it in a variable called "rows".
+# First, grab the data from the first tab of the spreadsheet
+# and store it in a variable called "rows".
 
-    for index, row in csv_data.iterrows():
-        #print(row)
+for index, row in csv_data.iterrows():
+    #print(row)
 
-        # Loop through each schema from the CSV file
-        print("starting RAML loop: " + str(index))
-        
-        # For each row, save the data from each column
-        modName = row['Module']
-        #print(modName)
-        intName = row['Interface']
-        #print(intName)
-        ldpName = row['LDP table name']
-        #print(ldpName)
-        ramlURL = row['Schema URL']
-        #print(ramlURL)
-        exampleURL = row['Example URL']
-        #print(exampleURL)
-        
-        apiUrl = row['Dev API URL']
-        urlLookup[intName] = apiUrl
-        
-        #print(urlLookup);
-
-        # if there is a row without a ramlURL, just skip it entirely
-        if pd.notna(ramlURL):
-
-            # if there is a row without an example URL, just leave that blank
-            exampleJson = ''
-
-            if pd.notna(exampleURL):
-                response = requests.get(exampleURL)
-
-                # If the connection is established to refURL
-                if response.status_code == 200:
-
-                    exampleJson = response.text
-
-                # If the refURL is not available
-                else:
-                    
-                    # Show the error message for the user
-                    print("Oh, something went wrong! Cannot fetch example JSON from URL: " + exampleURL)
-                    print(response.status_code)
-
-                # Close the connection
-                response.close()                
-            
-            examples[ldpName] = exampleJson; 
-            
-            # Extract the properties from the RAML URL with a separate function and save
-            # to a variable named "oneRAML". The properties will be in the form of a JSON object.
-            print("getting props")
-            oneRAML = getAllProps(ramlURL)
-            
-            # Start building an array to store the properties in tabular form. This will
-            # be an array of arrays, which is what is required to fill data into the second 
-            # tab of the Google Sheet. The first element added to the array is a subheading 
-            # row, which presents basic table info from the first spreadsheet tab. 
-            
-            #propArray = [[modName, intName, ldpName, '', '', '']]
-            
-            # Call the propsToRows() function, which takes some of the information
-            # from the first tab and the JSON object containing the properties and
-            # returns the parsed data in an array of arrays.
-            propRows = propsToRows(modName, intName, ldpName, oneRAML, ramlURL, '')
-            
-            # Add the tabular form of the properties to the same array with the subheading.
-            propArray.extend(propRows)
-            
-            # Add the combined array of arrays to the growing array that stores the data from 
-            # all of the various RAMLs.
-            newRows.extend(propArray)
-            
-            print("ending RAML loop " + str(index) + " with newRows of length " + str(len(newRows)))
-
-        
-        elif modName == 'mod_agreements':
-
-            # mod_agreements is different, so even though it doesn't have a URL, still look for data  
-            
-            # for each interface row, want to add a header to newRows,
-            # pull out all the data rows from the TSV,
-            # add those rows after header to newRows array
-            
-            # so, ermProps should be a dict where you can lookup all data rows
-            # for an interface at once, but then rows should already be formatted for 
-            # newRows
-            
-            #print(newRows)
-
-            #newRows.extend([[modName, intName, ldpName, '', '', '']])
-
-            #print(newRows)
-
-            ermLookup = modName + '.' + intName
-            
-            newERMRows = ermProps[ermLookup]
-            #print(newERMRows)
-            
-            for index, row in newERMRows.iterrows():
-                newRows.extend([[modName, intName, ldpName, row['Column Name'], '', row['Data Element Description']]])
-                
-
-    full_data = pd.DataFrame(newRows, columns=['Module Name', "Interface Name", "LDP Table Name", "Property Name", "Property Type",	"Property Description"])
-    #print(full_data)
-    full_data.to_csv("docs/full_data.csv", index=False)
-
-
-    ###############################################################################
-    #                                                                             #
-    # Output                                                                      #
-    # Create files for each table                                                 #
-    #                                                                             #
-    ###############################################################################
-
-    # html
-    #html.create_html_files(table_names, combined, desired_columns)
-
-    # markdown
-    #markdown.create_markdown_files(table_names, combined, desired_columns)
-
-# If the CSV is not available established
-else:
+    # Loop through each schema from the CSV file
+    print("starting RAML loop: " + str(index))
     
-    # Show the error message for the user
-    print("Oh, something went wrong! Cannot fetch csv file from GitHub")
-    print(response.status_code)
+    # For each row, save the data from each column
+    modName = row['Module']
+    #print(modName)
+    intName = row['Interface']
+    #print(intName)
+    ldpName = row['LDP table name']
+    #print(ldpName)
+    ramlURL = row['Schema URL']
+    #print(ramlURL)
+    exampleURL = row['Example URL']
+    #print(exampleURL)
+    
+    apiUrl = row['Dev API URL']
+    urlLookup[intName] = apiUrl
+    
+    #print(urlLookup);
 
-# Close the connection
-response.close()
+    # if there is a row without a ramlURL, just skip it entirely
+    if pd.notna(ramlURL):
 
+        # if there is a row without an example URL, just leave that blank
+        exampleJson = ''
+
+        if pd.notna(exampleURL):
+            response = requests.get(exampleURL)
+
+            # If the connection is established to refURL
+            if response.status_code == 200:
+
+                exampleJson = response.text
+
+            # If the refURL is not available
+            else:
+                
+                # Show the error message for the user
+                print("Oh, something went wrong! Cannot fetch example JSON from URL: " + exampleURL)
+                print(response.status_code)
+
+            # Close the connection
+            response.close()                
+        
+        examples[ldpName] = exampleJson; 
+        
+        # Extract the properties from the RAML URL with a separate function and save
+        # to a variable named "oneRAML". The properties will be in the form of a JSON object.
+        #print("getting props")
+        oneRAML = getAllProps(ramlURL)
+        
+        # Start building an array to store the properties in tabular form. This will
+        # be an array of arrays, which is what is required to fill data into the second 
+        # tab of the Google Sheet. The first element added to the array is a subheading 
+        # row, which presents basic table info from the first spreadsheet tab. 
+        
+        #propArray = [[modName, intName, ldpName, '', '', '']]
+        propArray = []
+        
+        # Call the propsToRows() function, which takes some of the information
+        # from the first tab and the JSON object containing the properties and
+        # returns the parsed data in an array of arrays.
+        propRows = propsToRows(modName, intName, ldpName, oneRAML, ramlURL, '')
+        
+        # Add the tabular form of the properties to the same array with the subheading.
+        propArray.extend(propRows)
+        
+        # Add the combined array of arrays to the growing array that stores the data from 
+        # all of the various RAMLs.
+        newRows.extend(propArray)
+        
+        print("ending RAML loop " + str(index) + " with newRows of length " + str(len(newRows)))
+
+    
+    elif modName == 'mod_agreements':
+
+        # mod_agreements is different, so even though it doesn't have a URL, still look for data  
+        
+        # for each interface row, want to add a header to newRows,
+        # pull out all the data rows from the TSV,
+        # add those rows after header to newRows array
+        
+        # so, ermProps should be a dict where you can lookup all data rows
+        # for an interface at once, but then rows should already be formatted for 
+        # newRows
+        
+        #print(newRows)
+
+        #newRows.extend([[modName, intName, ldpName, '', '', '']])
+
+        #print(newRows)
+
+        ermLookup = modName + '.' + intName
+        
+        newERMRows = ermProps[ermLookup]
+        #print(newERMRows)
+        
+        for index, row in newERMRows.iterrows():
+            newRows.extend([[modName, intName, ldpName, row['Column Name'], '', row['Data Element Description']]])
+            
+
+full_data = pd.DataFrame(newRows, columns=['Module Name', "Interface Name", "LDP Table Name", "Property Name", "Property Type",	"Property Description"])
+#print(full_data)
+#full_data.to_csv("docs/full_data.csv", index=False)
+
+create_markdown_files_extracted(full_data['LDP Table Name'].unique(), full_data, ["Property Name", "Property Type",	"Property Description"])
+
+
+###############################################################################
+#                                                                             #
+# Output                                                                      #
+# Create files for each table                                                 #
+#                                                                             #
+###############################################################################
+
+# html
+#html.create_html_files(table_names, combined, desired_columns)
+
+# markdown
+#markdown.create_markdown_files(table_names, combined, desired_columns)
 

@@ -1,1 +1,3 @@
-# Test of the Output Directory
+# Auto-Generated FOLIO Data Documentation 
+
+* [Extracted Table Documentation](extracted)
