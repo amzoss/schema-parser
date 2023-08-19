@@ -1,0 +1,9 @@
+name: update-docs
+on: [push]
+jobs:
+  check-out:
+    runs-on: 
+      group: ubuntu-runners
+    steps:
+      - uses: actions/checkout@v3.5.3
+      - run: ls
