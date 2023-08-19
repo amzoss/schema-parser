@@ -103,7 +103,7 @@ def create_markdown_files_extracted(table_names, full_df, desired_columns):
         ###############################################################################     
 
         # Section header
-        title           = "---\n" + "title: Documentation&#58; <a href='" + tbl   + ".md'>" + tbl + "</a>"   + "\n---\n"
+        title           = "---\n" + "title: " + tbl + "\n---\n"
         
         # Section source
         h2_source       = "## Source:\n\n"
