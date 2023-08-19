@@ -1,5 +1,7 @@
 name: update-docs
 on: [push]
+permissions:
+  contents: write
 jobs:
   check-out:
     runs-on: ubuntu-latest
@@ -8,4 +10,11 @@ jobs:
       - uses: py-actions/py-dependency-install@v4
         with:
           path: "requirements.txt"
-      - run: python python/extracted_table_docs.py
+      - name: Run python script
+        run: python python/extracted_table_docs.py
+      - name: Commit output
+        run: |
+          git config --global user.name 'Angela Zoss via GitHub Actions'
+          git config --global user.email 'amzoss@users.noreply.github.com'
+          git commit -am "Updated output from extracted_table_docs.py"
+          git push
