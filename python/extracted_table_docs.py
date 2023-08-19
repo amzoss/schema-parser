@@ -68,8 +68,7 @@ ermProps    = None
 def create_markdown_files_extracted(table_names, full_df, desired_columns):
 
     combined_title  = "---\n" + "title: Extracted Table Documentation" + "\n---\n"
-    combined_h1     = "# Extracted Table Documentation\n\n"
-    combined_tables = combined_title + combined_h1
+    combined_tables = combined_title
 
 
 
@@ -104,9 +103,8 @@ def create_markdown_files_extracted(table_names, full_df, desired_columns):
         ###############################################################################     
 
         # Section header
-        title           = "---\n" + "title: " + tbl   + "\n---\n"
-        h1              = "# Documentation: [" + tbl   + "](" + tbl + ".md)\n\n"
-
+        title           = "---\n" + "title: Documentation: <a href='" + tbl   + ".md'>" + tbl + "</a>"   + "\n---\n"
+        
         # Section source
         h2_source       = "## Source:\n\n"
         p_source        = "Module: " + modName + "\n\n" + "Interface: " + intName + "\n\n"
@@ -140,7 +138,7 @@ def create_markdown_files_extracted(table_names, full_df, desired_columns):
         #                                                                             #
         ###############################################################################        
 
-        indiv_output_string = title + h1 + h2_source + p_source + h2_attr + markdown_table + "\n\n"
+        indiv_output_string = title + h2_source + p_source + h2_attr + markdown_table + "\n\n"
 
         combined_output_string = h2 + h3_source + p_source + h3_attr + markdown_table + "\n\n"
 
