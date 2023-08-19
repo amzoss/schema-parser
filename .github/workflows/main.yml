@@ -16,7 +16,7 @@ jobs:
         run: python python/extracted_table_docs.py
       - name: Check for modified files
         id: git-check
-        run: echo ::set-output name=modified::$(if [ -n "$(git status --porcelain)" ]; then echo "true"; else echo "false"; fi)
+        run: echo 'modified=$(if [ -n "$(git status --porcelain)" ]; then echo "true"; else echo "false"; fi)' >> "$GITHUB_OUTPUT"
       - name: Commit output if changed
         if: steps.git-check.outputs.modified == 'true'
         run: |
