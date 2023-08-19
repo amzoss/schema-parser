@@ -22,7 +22,7 @@ jobs:
       - name: Print result of modification check
         env:
           OUTPUT: ${{ steps.git-check.outputs.modified }}
-        run: echo "Git Check Output: $OUTPUT"
+        run: echo "Git Check Output - $OUTPUT"
       - name: Commit output if changed
         if: steps.git-check.outputs.modified == 'true'
         run: |
