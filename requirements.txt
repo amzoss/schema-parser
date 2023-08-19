@@ -1,4 +1,4 @@
 pandas
 requests
 tabulate
-mermaid
+#mermaid
