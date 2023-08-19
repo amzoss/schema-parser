@@ -18,6 +18,7 @@ jobs:
         id: git-check
         run: result=$(if [ -n "$(git status --porcelain)" ]; then echo "true"; else echo "false"; fi)
         run: echo "modified=$result" > "$GITHUB_OUTPUT"
+      - name: Print result of modification check
         run: echo "Git Check Output: ${{ steps.git-check.outputs.modified }}"
       - name: Commit output if changed
         if: steps.git-check.outputs.modified == 'true'
