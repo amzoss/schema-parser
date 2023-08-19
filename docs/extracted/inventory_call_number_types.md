@@ -1,8 +1,6 @@
 ---
-title: inventory_call_number_types
+title: Documentation: <a href='inventory_call_number_types.md'>inventory_call_number_types</a>
 ---
-# Documentation: [inventory_call_number_types](inventory_call_number_types.md)
-
 ## Source:
 
 Module: mod-inventory-storage

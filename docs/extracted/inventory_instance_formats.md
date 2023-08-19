@@ -1,8 +1,6 @@
 ---
-title: inventory_instance_formats
+title: Documentation: <a href='inventory_instance_formats.md'>inventory_instance_formats</a>
 ---
-# Documentation: [inventory_instance_formats](inventory_instance_formats.md)
-
 ## Source:
 
 Module: mod-inventory-storage

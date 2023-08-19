@@ -1,8 +1,6 @@
 ---
-title: circulation_patron_notice_policies
+title: Documentation: <a href='circulation_patron_notice_policies.md'>circulation_patron_notice_policies</a>
 ---
-# Documentation: [circulation_patron_notice_policies](circulation_patron_notice_policies.md)
-
 ## Source:
 
 Module: mod-circulation-storage

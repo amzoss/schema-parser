@@ -1,8 +1,6 @@
 ---
-title: po_receiving_history
+title: Documentation: <a href='po_receiving_history.md'>po_receiving_history</a>
 ---
-# Documentation: [po_receiving_history](po_receiving_history.md)
-
 ## Source:
 
 Module: mod-orders-storage

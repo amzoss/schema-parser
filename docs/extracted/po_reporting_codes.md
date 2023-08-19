@@ -1,8 +1,6 @@
 ---
-title: po_reporting_codes
+title: Documentation: <a href='po_reporting_codes.md'>po_reporting_codes</a>
 ---
-# Documentation: [po_reporting_codes](po_reporting_codes.md)
-
 ## Source:
 
 Module: mod-orders-storage

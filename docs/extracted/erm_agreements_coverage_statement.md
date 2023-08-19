@@ -1,8 +1,6 @@
 ---
-title: erm_agreements_coverage_statement
+title: Documentation: <a href='erm_agreements_coverage_statement.md'>erm_agreements_coverage_statement</a>
 ---
-# Documentation: [erm_agreements_coverage_statement](erm_agreements_coverage_statement.md)
-
 ## Source:
 
 Module: mod_agreements

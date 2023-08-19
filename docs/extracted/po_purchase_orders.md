@@ -1,8 +1,6 @@
 ---
-title: po_purchase_orders
+title: Documentation: <a href='po_purchase_orders.md'>po_purchase_orders</a>
 ---
-# Documentation: [po_purchase_orders](po_purchase_orders.md)
-
 ## Source:
 
 Module: mod-orders-storage

@@ -1,8 +1,6 @@
 ---
-title: inventory_classification_types
+title: Documentation: <a href='inventory_classification_types.md'>inventory_classification_types</a>
 ---
-# Documentation: [inventory_classification_types](inventory_classification_types.md)
-
 ## Source:
 
 Module: mod-inventory-storage

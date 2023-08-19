@@ -1,8 +1,6 @@
 ---
-title: erm_agreements_identifier_occurrence
+title: Documentation: <a href='erm_agreements_identifier_occurrence.md'>erm_agreements_identifier_occurrence</a>
 ---
-# Documentation: [erm_agreements_identifier_occurrence](erm_agreements_identifier_occurrence.md)
-
 ## Source:
 
 Module: mod_agreements

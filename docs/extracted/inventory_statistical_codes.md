@@ -1,8 +1,6 @@
 ---
-title: inventory_statistical_codes
+title: Documentation: <a href='inventory_statistical_codes.md'>inventory_statistical_codes</a>
 ---
-# Documentation: [inventory_statistical_codes](inventory_statistical_codes.md)
-
 ## Source:
 
 Module: mod-inventory-storage

@@ -1,8 +1,6 @@
 ---
-title: circulation_fixed_due_date_schedules
+title: Documentation: <a href='circulation_fixed_due_date_schedules.md'>circulation_fixed_due_date_schedules</a>
 ---
-# Documentation: [circulation_fixed_due_date_schedules](circulation_fixed_due_date_schedules.md)
-
 ## Source:
 
 Module: mod-circulation-storage

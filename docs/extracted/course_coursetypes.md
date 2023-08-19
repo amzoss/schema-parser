@@ -1,8 +1,6 @@
 ---
-title: course_coursetypes
+title: Documentation: <a href='course_coursetypes.md'>course_coursetypes</a>
 ---
-# Documentation: [course_coursetypes](course_coursetypes.md)
-
 ## Source:
 
 Module: mod-courses

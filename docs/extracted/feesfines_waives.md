@@ -1,8 +1,6 @@
 ---
-title: feesfines_waives
+title: Documentation: <a href='feesfines_waives.md'>feesfines_waives</a>
 ---
-# Documentation: [feesfines_waives](feesfines_waives.md)
-
 ## Source:
 
 Module: mod-feesfines

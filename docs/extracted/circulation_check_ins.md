@@ -1,8 +1,6 @@
 ---
-title: circulation_check_ins
+title: Documentation: <a href='circulation_check_ins.md'>circulation_check_ins</a>
 ---
-# Documentation: [circulation_check_ins](circulation_check_ins.md)
-
 ## Source:
 
 Module: mod-circulation-storage

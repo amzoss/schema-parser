@@ -1,8 +1,6 @@
 ---
-title: circulation_loan_policies
+title: Documentation: <a href='circulation_loan_policies.md'>circulation_loan_policies</a>
 ---
-# Documentation: [circulation_loan_policies](circulation_loan_policies.md)
-
 ## Source:
 
 Module: mod-circulation-storage

@@ -1,8 +1,6 @@
 ---
-title: po_alerts
+title: Documentation: <a href='po_alerts.md'>po_alerts</a>
 ---
-# Documentation: [po_alerts](po_alerts.md)
-
 ## Source:
 
 Module: mod-orders-storage

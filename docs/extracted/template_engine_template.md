@@ -1,8 +1,6 @@
 ---
-title: template_engine_template
+title: Documentation: <a href='template_engine_template.md'>template_engine_template</a>
 ---
-# Documentation: [template_engine_template](template_engine_template.md)
-
 ## Source:
 
 Module: mod-template-engine

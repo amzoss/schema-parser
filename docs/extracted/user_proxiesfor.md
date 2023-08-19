@@ -1,8 +1,6 @@
 ---
-title: user_proxiesfor
+title: Documentation: <a href='user_proxiesfor.md'>user_proxiesfor</a>
 ---
-# Documentation: [user_proxiesfor](user_proxiesfor.md)
-
 ## Source:
 
 Module: mod-users

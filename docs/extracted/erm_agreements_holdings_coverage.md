@@ -1,8 +1,6 @@
 ---
-title: erm_agreements_holdings_coverage
+title: Documentation: <a href='erm_agreements_holdings_coverage.md'>erm_agreements_holdings_coverage</a>
 ---
-# Documentation: [erm_agreements_holdings_coverage](erm_agreements_holdings_coverage.md)
-
 ## Source:
 
 Module: mod_agreements

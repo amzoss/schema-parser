@@ -1,8 +1,6 @@
 ---
-title: inventory_alternative_title_types
+title: Documentation: <a href='inventory_alternative_title_types.md'>inventory_alternative_title_types</a>
 ---
-# Documentation: [inventory_alternative_title_types](inventory_alternative_title_types.md)
-
 ## Source:
 
 Module: mod-inventory-storage

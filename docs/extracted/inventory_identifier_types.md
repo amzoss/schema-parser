@@ -1,8 +1,6 @@
 ---
-title: inventory_identifier_types
+title: Documentation: <a href='inventory_identifier_types.md'>inventory_identifier_types</a>
 ---
-# Documentation: [inventory_identifier_types](inventory_identifier_types.md)
-
 ## Source:
 
 Module: mod-inventory-storage

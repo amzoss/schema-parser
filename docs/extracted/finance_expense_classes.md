@@ -1,8 +1,6 @@
 ---
-title: finance_expense_classes
+title: Documentation: <a href='finance_expense_classes.md'>finance_expense_classes</a>
 ---
-# Documentation: [finance_expense_classes](finance_expense_classes.md)
-
 ## Source:
 
 Module: mod-finance-storage

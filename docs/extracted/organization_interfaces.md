@@ -1,8 +1,6 @@
 ---
-title: organization_interfaces
+title: Documentation: <a href='organization_interfaces.md'>organization_interfaces</a>
 ---
-# Documentation: [organization_interfaces](organization_interfaces.md)
-
 ## Source:
 
 Module: mod-organizations-storage

@@ -1,8 +1,6 @@
 ---
-title: user_groups
+title: Documentation: <a href='user_groups.md'>user_groups</a>
 ---
-# Documentation: [user_groups](user_groups.md)
-
 ## Source:
 
 Module: mod-users

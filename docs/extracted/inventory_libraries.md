@@ -1,8 +1,6 @@
 ---
-title: inventory_libraries
+title: Documentation: <a href='inventory_libraries.md'>inventory_libraries</a>
 ---
-# Documentation: [inventory_libraries](inventory_libraries.md)
-
 ## Source:
 
 Module: mod-inventory-storage

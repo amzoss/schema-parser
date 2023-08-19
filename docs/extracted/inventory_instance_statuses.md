@@ -1,8 +1,6 @@
 ---
-title: inventory_instance_statuses
+title: Documentation: <a href='inventory_instance_statuses.md'>inventory_instance_statuses</a>
 ---
-# Documentation: [inventory_instance_statuses](inventory_instance_statuses.md)
-
 ## Source:
 
 Module: mod-inventory-storage

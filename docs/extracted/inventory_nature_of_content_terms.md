@@ -1,8 +1,6 @@
 ---
-title: inventory_nature_of_content_terms
+title: Documentation: <a href='inventory_nature_of_content_terms.md'>inventory_nature_of_content_terms</a>
 ---
-# Documentation: [inventory_nature_of_content_terms](inventory_nature_of_content_terms.md)
-
 ## Source:
 
 Module: mod-inventory-storage

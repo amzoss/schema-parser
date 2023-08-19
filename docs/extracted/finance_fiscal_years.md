@@ -1,8 +1,6 @@
 ---
-title: finance_fiscal_years
+title: Documentation: <a href='finance_fiscal_years.md'>finance_fiscal_years</a>
 ---
-# Documentation: [finance_fiscal_years](finance_fiscal_years.md)
-
 ## Source:
 
 Module: mod-finance-storage

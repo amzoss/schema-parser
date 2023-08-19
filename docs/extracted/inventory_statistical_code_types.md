@@ -1,8 +1,6 @@
 ---
-title: inventory_statistical_code_types
+title: Documentation: <a href='inventory_statistical_code_types.md'>inventory_statistical_code_types</a>
 ---
-# Documentation: [inventory_statistical_code_types](inventory_statistical_code_types.md)
-
 ## Source:
 
 Module: mod-inventory-storage

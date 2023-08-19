@@ -1,8 +1,6 @@
 ---
-title: erm_agreements_order_line
+title: Documentation: <a href='erm_agreements_order_line.md'>erm_agreements_order_line</a>
 ---
-# Documentation: [erm_agreements_order_line](erm_agreements_order_line.md)
-
 ## Source:
 
 Module: mod_agreements

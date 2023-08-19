@@ -1,8 +1,6 @@
 ---
-title: user_addresstypes
+title: Documentation: <a href='user_addresstypes.md'>user_addresstypes</a>
 ---
-# Documentation: [user_addresstypes](user_addresstypes.md)
-
 ## Source:
 
 Module: mod-users

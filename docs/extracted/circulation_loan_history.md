@@ -1,8 +1,6 @@
 ---
-title: circulation_loan_history
+title: Documentation: <a href='circulation_loan_history.md'>circulation_loan_history</a>
 ---
-# Documentation: [circulation_loan_history](circulation_loan_history.md)
-
 ## Source:
 
 Module: mod-circulation-storage

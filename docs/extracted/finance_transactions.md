@@ -1,8 +1,6 @@
 ---
-title: finance_transactions
+title: Documentation: <a href='finance_transactions.md'>finance_transactions</a>
 ---
-# Documentation: [finance_transactions](finance_transactions.md)
-
 ## Source:
 
 Module: mod-finance-storage

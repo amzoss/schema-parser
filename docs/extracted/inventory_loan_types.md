@@ -1,8 +1,6 @@
 ---
-title: inventory_loan_types
+title: Documentation: <a href='inventory_loan_types.md'>inventory_loan_types</a>
 ---
-# Documentation: [inventory_loan_types](inventory_loan_types.md)
-
 ## Source:
 
 Module: mod-inventory-storage

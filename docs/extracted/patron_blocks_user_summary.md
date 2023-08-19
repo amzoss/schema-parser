@@ -1,8 +1,6 @@
 ---
-title: patron_blocks_user_summary
+title: Documentation: <a href='patron_blocks_user_summary.md'>patron_blocks_user_summary</a>
 ---
-# Documentation: [patron_blocks_user_summary](patron_blocks_user_summary.md)
-
 ## Source:
 
 Module: mod-patron-blocks

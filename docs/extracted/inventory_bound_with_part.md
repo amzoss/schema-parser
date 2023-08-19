@@ -1,8 +1,6 @@
 ---
-title: inventory_bound_with_part
+title: Documentation: <a href='inventory_bound_with_part.md'>inventory_bound_with_part</a>
 ---
-# Documentation: [inventory_bound_with_part](inventory_bound_with_part.md)
-
 ## Source:
 
 Module: mod-inventory-storage

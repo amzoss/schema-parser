@@ -1,8 +1,6 @@
 ---
-title: inventory_locations
+title: Documentation: <a href='inventory_locations.md'>inventory_locations</a>
 ---
-# Documentation: [inventory_locations](inventory_locations.md)
-
 ## Source:
 
 Module: mod-inventory-storage

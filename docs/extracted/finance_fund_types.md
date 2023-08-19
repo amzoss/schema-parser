@@ -1,8 +1,6 @@
 ---
-title: finance_fund_types
+title: Documentation: <a href='finance_fund_types.md'>finance_fund_types</a>
 ---
-# Documentation: [finance_fund_types](finance_fund_types.md)
-
 ## Source:
 
 Module: mod-finance-storage

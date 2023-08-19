@@ -1,8 +1,6 @@
 ---
-title: course_processingstatuses
+title: Documentation: <a href='course_processingstatuses.md'>course_processingstatuses</a>
 ---
-# Documentation: [course_processingstatuses](course_processingstatuses.md)
-
 ## Source:
 
 Module: mod-courses

@@ -1,8 +1,6 @@
 ---
-title: circulation_cancellation_reasons
+title: Documentation: <a href='circulation_cancellation_reasons.md'>circulation_cancellation_reasons</a>
 ---
-# Documentation: [circulation_cancellation_reasons](circulation_cancellation_reasons.md)
-
 ## Source:
 
 Module: mod-circulation-storage

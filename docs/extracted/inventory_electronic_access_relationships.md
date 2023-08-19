@@ -1,8 +1,6 @@
 ---
-title: inventory_electronic_access_relationships
+title: Documentation: <a href='inventory_electronic_access_relationships.md'>inventory_electronic_access_relationships</a>
 ---
-# Documentation: [inventory_electronic_access_relationships](inventory_electronic_access_relationships.md)
-
 ## Source:
 
 Module: mod-inventory-storage

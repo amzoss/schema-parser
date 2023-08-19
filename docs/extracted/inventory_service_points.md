@@ -1,8 +1,6 @@
 ---
-title: inventory_service_points
+title: Documentation: <a href='inventory_service_points.md'>inventory_service_points</a>
 ---
-# Documentation: [inventory_service_points](inventory_service_points.md)
-
 ## Source:
 
 Module: mod-inventory-storage

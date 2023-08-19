@@ -1,8 +1,6 @@
 ---
-title: feesfines_lost_item_fees_policies
+title: Documentation: <a href='feesfines_lost_item_fees_policies.md'>feesfines_lost_item_fees_policies</a>
 ---
-# Documentation: [feesfines_lost_item_fees_policies](feesfines_lost_item_fees_policies.md)
-
 ## Source:
 
 Module: mod-feesfines

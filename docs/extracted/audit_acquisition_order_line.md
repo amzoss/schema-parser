@@ -1,8 +1,6 @@
 ---
-title: audit_acquisition_order_line
+title: Documentation: <a href='audit_acquisition_order_line.md'>audit_acquisition_order_line</a>
 ---
-# Documentation: [audit_acquisition_order_line](audit_acquisition_order_line.md)
-
 ## Source:
 
 Module: mod-audit

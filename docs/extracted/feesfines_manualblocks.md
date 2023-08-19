@@ -1,8 +1,6 @@
 ---
-title: feesfines_manualblocks
+title: Documentation: <a href='feesfines_manualblocks.md'>feesfines_manualblocks</a>
 ---
-# Documentation: [feesfines_manualblocks](feesfines_manualblocks.md)
-
 ## Source:
 
 Module: mod-feesfines

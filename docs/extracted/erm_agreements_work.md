@@ -1,8 +1,6 @@
 ---
-title: erm_agreements_work
+title: Documentation: <a href='erm_agreements_work.md'>erm_agreements_work</a>
 ---
-# Documentation: [erm_agreements_work](erm_agreements_work.md)
-
 ## Source:
 
 Module: mod_agreements

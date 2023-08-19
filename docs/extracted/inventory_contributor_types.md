@@ -1,8 +1,6 @@
 ---
-title: inventory_contributor_types
+title: Documentation: <a href='inventory_contributor_types.md'>inventory_contributor_types</a>
 ---
-# Documentation: [inventory_contributor_types](inventory_contributor_types.md)
-
 ## Source:
 
 Module: mod-inventory-storage

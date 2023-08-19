@@ -1,8 +1,6 @@
 ---
-title: po_lines
+title: Documentation: <a href='po_lines.md'>po_lines</a>
 ---
-# Documentation: [po_lines](po_lines.md)
-
 ## Source:
 
 Module: mod-orders-storage

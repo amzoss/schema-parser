@@ -1,8 +1,6 @@
 ---
-title: finance_ledgers
+title: Documentation: <a href='finance_ledgers.md'>finance_ledgers</a>
 ---
-# Documentation: [finance_ledgers](finance_ledgers.md)
-
 ## Source:
 
 Module: mod-finance-storage

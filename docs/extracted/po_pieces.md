@@ -1,8 +1,6 @@
 ---
-title: po_pieces
+title: Documentation: <a href='po_pieces.md'>po_pieces</a>
 ---
-# Documentation: [po_pieces](po_pieces.md)
-
 ## Source:
 
 Module: mod-orders-storage

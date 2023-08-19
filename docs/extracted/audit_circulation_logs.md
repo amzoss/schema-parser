@@ -1,8 +1,6 @@
 ---
-title: audit_circulation_logs
+title: Documentation: <a href='audit_circulation_logs.md'>audit_circulation_logs</a>
 ---
-# Documentation: [audit_circulation_logs](audit_circulation_logs.md)
-
 ## Source:
 
 Module: mod-audit

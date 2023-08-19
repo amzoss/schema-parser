@@ -1,8 +1,6 @@
 ---
-title: invoice_voucher_lines
+title: Documentation: <a href='invoice_voucher_lines.md'>invoice_voucher_lines</a>
 ---
-# Documentation: [invoice_voucher_lines](invoice_voucher_lines.md)
-
 ## Source:
 
 Module: mod-invoice-storage

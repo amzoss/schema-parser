@@ -1,8 +1,6 @@
 ---
-title: circulation_scheduled_notices
+title: Documentation: <a href='circulation_scheduled_notices.md'>circulation_scheduled_notices</a>
 ---
-# Documentation: [circulation_scheduled_notices](circulation_scheduled_notices.md)
-
 ## Source:
 
 Module: mod-circulation-storage

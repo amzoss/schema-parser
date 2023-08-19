@@ -1,8 +1,6 @@
 ---
-title: inventory_item_note_types
+title: Documentation: <a href='inventory_item_note_types.md'>inventory_item_note_types</a>
 ---
-# Documentation: [inventory_item_note_types](inventory_item_note_types.md)
-
 ## Source:
 
 Module: mod-inventory-storage

@@ -1,8 +1,6 @@
 ---
-title: inventory_ill_policies
+title: Documentation: <a href='inventory_ill_policies.md'>inventory_ill_policies</a>
 ---
-# Documentation: [inventory_ill_policies](inventory_ill_policies.md)
-
 ## Source:
 
 Module: mod-inventory-storage

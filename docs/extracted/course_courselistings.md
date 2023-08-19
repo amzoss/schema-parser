@@ -1,8 +1,6 @@
 ---
-title: course_courselistings
+title: Documentation: <a href='course_courselistings.md'>course_courselistings</a>
 ---
-# Documentation: [course_courselistings](course_courselistings.md)
-
 ## Source:
 
 Module: mod-courses

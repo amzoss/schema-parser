@@ -1,8 +1,6 @@
 ---
-title: user_users
+title: Documentation: <a href='user_users.md'>user_users</a>
 ---
-# Documentation: [user_users](user_users.md)
-
 ## Source:
 
 Module: mod-users

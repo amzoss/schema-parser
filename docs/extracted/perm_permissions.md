@@ -1,8 +1,6 @@
 ---
-title: perm_permissions
+title: Documentation: <a href='perm_permissions.md'>perm_permissions</a>
 ---
-# Documentation: [perm_permissions](perm_permissions.md)
-
 ## Source:
 
 Module: mod-permissions

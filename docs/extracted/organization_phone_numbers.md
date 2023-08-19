@@ -1,8 +1,6 @@
 ---
-title: organization_phone_numbers
+title: Documentation: <a href='organization_phone_numbers.md'>organization_phone_numbers</a>
 ---
-# Documentation: [organization_phone_numbers](organization_phone_numbers.md)
-
 ## Source:
 
 Module: mod-organizations-storage

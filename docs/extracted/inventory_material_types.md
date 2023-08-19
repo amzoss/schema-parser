@@ -1,8 +1,6 @@
 ---
-title: inventory_material_types
+title: Documentation: <a href='inventory_material_types.md'>inventory_material_types</a>
 ---
-# Documentation: [inventory_material_types](inventory_material_types.md)
-
 ## Source:
 
 Module: mod-inventory-storage

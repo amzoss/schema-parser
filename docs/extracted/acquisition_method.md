@@ -1,8 +1,6 @@
 ---
-title: acquisition_method
+title: Documentation: <a href='acquisition_method.md'>acquisition_method</a>
 ---
-# Documentation: [acquisition_method](acquisition_method.md)
-
 ## Source:
 
 Module: mod-orders-storage

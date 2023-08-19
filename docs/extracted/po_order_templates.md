@@ -1,8 +1,6 @@
 ---
-title: po_order_templates
+title: Documentation: <a href='po_order_templates.md'>po_order_templates</a>
 ---
-# Documentation: [po_order_templates](po_order_templates.md)
-
 ## Source:
 
 Module: mod-orders-storage

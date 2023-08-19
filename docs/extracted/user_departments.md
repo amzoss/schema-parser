@@ -1,8 +1,6 @@
 ---
-title: user_departments
+title: Documentation: <a href='user_departments.md'>user_departments</a>
 ---
-# Documentation: [user_departments](user_departments.md)
-
 ## Source:
 
 Module: mod-users

@@ -1,8 +1,6 @@
 ---
-title: organization_emails
+title: Documentation: <a href='organization_emails.md'>organization_emails</a>
 ---
-# Documentation: [organization_emails](organization_emails.md)
-
 ## Source:
 
 Module: mod-organizations-storage

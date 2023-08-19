@@ -1,8 +1,6 @@
 ---
-title: erm_agreements_subscription_agreement
+title: Documentation: <a href='erm_agreements_subscription_agreement.md'>erm_agreements_subscription_agreement</a>
 ---
-# Documentation: [erm_agreements_subscription_agreement](erm_agreements_subscription_agreement.md)
-
 ## Source:
 
 Module: mod_agreements

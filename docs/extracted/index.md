@@ -1,8 +1,6 @@
 ---
 title: Extracted Table Documentation
 ---
-# Extracted Table Documentation
-
 ## Documentation: [erm_agreements_coverage_statement](erm_agreements_coverage_statement.md)
 
 ### Source:

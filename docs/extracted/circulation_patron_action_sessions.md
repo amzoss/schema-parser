@@ -1,8 +1,6 @@
 ---
-title: circulation_patron_action_sessions
+title: Documentation: <a href='circulation_patron_action_sessions.md'>circulation_patron_action_sessions</a>
 ---
-# Documentation: [circulation_patron_action_sessions](circulation_patron_action_sessions.md)
-
 ## Source:
 
 Module: mod-circulation-storage

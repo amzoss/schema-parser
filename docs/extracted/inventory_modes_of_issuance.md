@@ -1,8 +1,6 @@
 ---
-title: inventory_modes_of_issuance
+title: Documentation: <a href='inventory_modes_of_issuance.md'>inventory_modes_of_issuance</a>
 ---
-# Documentation: [inventory_modes_of_issuance](inventory_modes_of_issuance.md)
-
 ## Source:
 
 Module: mod-inventory-storage

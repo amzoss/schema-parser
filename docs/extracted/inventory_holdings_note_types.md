@@ -1,8 +1,6 @@
 ---
-title: inventory_holdings_note_types
+title: Documentation: <a href='inventory_holdings_note_types.md'>inventory_holdings_note_types</a>
 ---
-# Documentation: [inventory_holdings_note_types](inventory_holdings_note_types.md)
-
 ## Source:
 
 Module: mod-inventory-storage

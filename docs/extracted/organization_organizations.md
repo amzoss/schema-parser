@@ -1,8 +1,6 @@
 ---
-title: organization_organizations
+title: Documentation: <a href='organization_organizations.md'>organization_organizations</a>
 ---
-# Documentation: [organization_organizations](organization_organizations.md)
-
 ## Source:
 
 Module: mod-organizations-storage

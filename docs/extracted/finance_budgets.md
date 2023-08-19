@@ -1,8 +1,6 @@
 ---
-title: finance_budgets
+title: Documentation: <a href='finance_budgets.md'>finance_budgets</a>
 ---
-# Documentation: [finance_budgets](finance_budgets.md)
-
 ## Source:
 
 Module: mod-finance-storage

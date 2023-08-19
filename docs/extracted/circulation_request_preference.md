@@ -1,8 +1,6 @@
 ---
-title: circulation_request_preference
+title: Documentation: <a href='circulation_request_preference.md'>circulation_request_preference</a>
 ---
-# Documentation: [circulation_request_preference](circulation_request_preference.md)
-
 ## Source:
 
 Module: mod-circulation-storage

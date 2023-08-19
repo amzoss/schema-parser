@@ -1,8 +1,6 @@
 ---
-title: feesfines_comments
+title: Documentation: <a href='feesfines_comments.md'>feesfines_comments</a>
 ---
-# Documentation: [feesfines_comments](feesfines_comments.md)
-
 ## Source:
 
 Module: mod-feesfines

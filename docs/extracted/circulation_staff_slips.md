@@ -1,8 +1,6 @@
 ---
-title: circulation_staff_slips
+title: Documentation: <a href='circulation_staff_slips.md'>circulation_staff_slips</a>
 ---
-# Documentation: [circulation_staff_slips](circulation_staff_slips.md)
-
 ## Source:
 
 Module: mod-circulation-storage

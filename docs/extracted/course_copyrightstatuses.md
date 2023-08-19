@@ -1,8 +1,6 @@
 ---
-title: course_copyrightstatuses
+title: Documentation: <a href='course_copyrightstatuses.md'>course_copyrightstatuses</a>
 ---
-# Documentation: [course_copyrightstatuses](course_copyrightstatuses.md)
-
 ## Source:
 
 Module: mod-courses

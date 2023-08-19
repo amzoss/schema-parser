@@ -1,8 +1,6 @@
 ---
-title: circulation_requests
+title: Documentation: <a href='circulation_requests.md'>circulation_requests</a>
 ---
-# Documentation: [circulation_requests](circulation_requests.md)
-
 ## Source:
 
 Module: mod-circulation-storage

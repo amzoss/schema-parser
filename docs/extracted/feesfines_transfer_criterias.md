@@ -1,8 +1,6 @@
 ---
-title: feesfines_transfer_criterias
+title: Documentation: <a href='feesfines_transfer_criterias.md'>feesfines_transfer_criterias</a>
 ---
-# Documentation: [feesfines_transfer_criterias](feesfines_transfer_criterias.md)
-
 ## Source:
 
 Module: mod-feesfines

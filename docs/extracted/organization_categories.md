@@ -1,8 +1,6 @@
 ---
-title: organization_categories
+title: Documentation: <a href='organization_categories.md'>organization_categories</a>
 ---
-# Documentation: [organization_categories](organization_categories.md)
-
 ## Source:
 
 Module: mod-organizations-storage

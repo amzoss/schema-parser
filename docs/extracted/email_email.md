@@ -1,8 +1,6 @@
 ---
-title: email_email
+title: Documentation: <a href='email_email.md'>email_email</a>
 ---
-# Documentation: [email_email](email_email.md)
-
 ## Source:
 
 Module: mod-email

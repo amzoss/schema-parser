@@ -1,8 +1,6 @@
 ---
-title: po_order_invoice_relns
+title: Documentation: <a href='po_order_invoice_relns.md'>po_order_invoice_relns</a>
 ---
-# Documentation: [po_order_invoice_relns](po_order_invoice_relns.md)
-
 ## Source:
 
 Module: mod-orders-storage

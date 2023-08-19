@@ -1,8 +1,6 @@
 ---
-title: feesfines_overdue_fines_policies
+title: Documentation: <a href='feesfines_overdue_fines_policies.md'>feesfines_overdue_fines_policies</a>
 ---
-# Documentation: [feesfines_overdue_fines_policies](feesfines_overdue_fines_policies.md)
-
 ## Source:
 
 Module: mod-feesfines

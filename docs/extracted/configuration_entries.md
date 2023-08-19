@@ -1,8 +1,6 @@
 ---
-title: configuration_entries
+title: Documentation: <a href='configuration_entries.md'>configuration_entries</a>
 ---
-# Documentation: [configuration_entries](configuration_entries.md)
-
 ## Source:
 
 Module: mod-configuration

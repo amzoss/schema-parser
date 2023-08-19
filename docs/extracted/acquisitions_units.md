@@ -1,8 +1,6 @@
 ---
-title: acquisitions_units
+title: Documentation: <a href='acquisitions_units.md'>acquisitions_units</a>
 ---
-# Documentation: [acquisitions_units](acquisitions_units.md)
-
 ## Source:
 
 Module: mod-orders-storage

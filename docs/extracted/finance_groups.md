@@ -1,8 +1,6 @@
 ---
-title: finance_groups
+title: Documentation: <a href='finance_groups.md'>finance_groups</a>
 ---
-# Documentation: [finance_groups](finance_groups.md)
-
 ## Source:
 
 Module: mod-finance-storage

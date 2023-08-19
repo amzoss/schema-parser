@@ -1,8 +1,6 @@
 ---
-title: feesfines_transfers
+title: Documentation: <a href='feesfines_transfers.md'>feesfines_transfers</a>
 ---
-# Documentation: [feesfines_transfers](feesfines_transfers.md)
-
 ## Source:
 
 Module: mod-feesfines

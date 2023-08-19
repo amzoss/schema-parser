@@ -1,8 +1,6 @@
 ---
-title: acquisitions_memberships
+title: Documentation: <a href='acquisitions_memberships.md'>acquisitions_memberships</a>
 ---
-# Documentation: [acquisitions_memberships](acquisitions_memberships.md)
-
 ## Source:
 
 Module: mod-orders-storage

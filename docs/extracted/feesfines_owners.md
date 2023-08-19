@@ -1,8 +1,6 @@
 ---
-title: feesfines_owners
+title: Documentation: <a href='feesfines_owners.md'>feesfines_owners</a>
 ---
-# Documentation: [feesfines_owners](feesfines_owners.md)
-
 ## Source:
 
 Module: mod-feesfines

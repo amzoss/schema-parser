@@ -1,8 +1,6 @@
 ---
-title: inventory_item_damaged_statuses
+title: Documentation: <a href='inventory_item_damaged_statuses.md'>inventory_item_damaged_statuses</a>
 ---
-# Documentation: [inventory_item_damaged_statuses](inventory_item_damaged_statuses.md)
-
 ## Source:
 
 Module: mod-inventory-storage

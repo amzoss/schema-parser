@@ -1,8 +1,6 @@
 ---
-title: notes
+title: Documentation: <a href='notes.md'>notes</a>
 ---
-# Documentation: [notes](notes.md)
-
 ## Source:
 
 Module: mod-notes

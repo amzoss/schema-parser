@@ -1,8 +1,6 @@
 ---
-title: inventory_instance_types
+title: Documentation: <a href='inventory_instance_types.md'>inventory_instance_types</a>
 ---
-# Documentation: [inventory_instance_types](inventory_instance_types.md)
-
 ## Source:
 
 Module: mod-inventory-storage

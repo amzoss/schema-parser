@@ -1,8 +1,6 @@
 ---
-title: inventory_instance_relationships
+title: Documentation: <a href='inventory_instance_relationships.md'>inventory_instance_relationships</a>
 ---
-# Documentation: [inventory_instance_relationships](inventory_instance_relationships.md)
-
 ## Source:
 
 Module: mod-inventory-storage
