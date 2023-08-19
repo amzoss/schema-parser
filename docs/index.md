@@ -1,6 +1,6 @@
 ---
 title: Auto-Generated FOLIO Data Documentation 
+layout: home
 ---
-# Auto-Generated FOLIO Data Documentation 
 
 * [Extracted Table Documentation](extracted)
