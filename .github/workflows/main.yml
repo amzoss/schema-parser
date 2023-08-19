@@ -16,10 +16,13 @@ jobs:
         run: python python/extracted_table_docs.py
       - name: Check for modified files
         id: git-check
-        run: result=$(if [ -n "$(git status --porcelain)" ]; then echo "true"; else echo "false"; fi)
-        run: echo "modified=$result" > "$GITHUB_OUTPUT"
+        run: |
+          result=$(if [ -n "$(git status --porcelain)" ]; then echo "true"; else echo "false"; fi)
+          echo "modified=$result" > "$GITHUB_OUTPUT"
       - name: Print result of modification check
-        run: echo "Git Check Output: ${{ steps.git-check.outputs.modified }}"
+        env:
+          OUTPUT: ${{ steps.git-check.outputs.modified }}
+        run: echo "Git Check Output: $OUTPUT"
       - name: Commit output if changed
         if: steps.git-check.outputs.modified == 'true'
         run: |
