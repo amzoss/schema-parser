@@ -16,4 +16,5 @@ Interface: /orders-storage/order-templates
 | templateCode        | string          | The order template code         |
 | templateDescription | string          | The order template description  |
 | hiddenFields        | object          | Fields for hidden from end user |
+| categoryId          | string          | The UUID format string          |
 
