@@ -13,7 +13,7 @@ Interface: /organizations-storage/phone-numbers
 |:---------------------------|:----------------|:---------------------------------------------------------------------------------------------------|
 | id                         | string          | The UUID format string                                                                             |
 | phoneNumber                | string          | The entire sequence of digits for this phone number                                                |
-| categories                 | array           | The list of categories for this organization phone                                                 |
+| categories                 | array           | The list of category ids for this organization phone                                               |
 | type                       | string          | The type of this phone number                                                                      |
 | isPrimary                  | boolean         | Used to set this phone number as primary for the contact                                           |
 | language                   | string          | The language for this organization phone                                                           |

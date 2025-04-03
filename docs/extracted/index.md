@@ -3786,7 +3786,7 @@ Interface: /organizations-storage/addresses
 | zipCode                    | string          | The zip code for this address                                                                      |
 | country                    | string          | The country for this address                                                                       |
 | isPrimary                  | boolean         | Used to set this address as primary for the contact                                                |
-| categories                 | array           | The list of categories for this organization address                                               |
+| categories                 | array           | The list of category ids for this organization address                                             |
 | language                   | string          | The language for this organization address                                                         |
 | metadata                   | object          | Metadata about creation and changes to records, provided by the server (client should not provide) |
 | metadata/createdDate       | string          | Date and time when the record was created                                                          |
@@ -3841,7 +3841,7 @@ Interface: /organizations-storage/contacts
 | emails                     | array           | The list of emails for this contact person                                                         |
 | addresses                  | array           | The list of addresses for this contact person                                                      |
 | urls                       | array           | The list of URLs for this contact person                                                           |
-| categories                 | array           | The list of contact categories associated with this organization contact person                    |
+| categories                 | array           | The list of category ids for this organization contact person                                      |
 | inactive                   | boolean         | Used to indicate that a contact is no longer active                                                |
 | metadata                   | object          | Metadata about creation and changes to records, provided by the server (client should not provide) |
 | metadata/createdDate       | string          | Date and time when the record was created                                                          |
@@ -3867,7 +3867,7 @@ Interface: /organizations-storage/emails
 | value                      | string          | The value for this email                                                                           |
 | description                | string          | The description for this email                                                                     |
 | isPrimary                  | boolean         | Used to set this email as primary for the contact                                                  |
-| categories                 | array           | The list of categories for this organization email                                                 |
+| categories                 | array           | The list of category ids for this organization email                                               |
 | language                   | string          | The language for this organization email                                                           |
 | metadata                   | object          | Metadata about creation and changes to records, provided by the server (client should not provide) |
 | metadata/createdDate       | string          | Date and time when the record was created                                                          |
@@ -4023,7 +4023,7 @@ Interface: /organizations-storage/phone-numbers
 |:---------------------------|:----------------|:---------------------------------------------------------------------------------------------------|
 | id                         | string          | The UUID format string                                                                             |
 | phoneNumber                | string          | The entire sequence of digits for this phone number                                                |
-| categories                 | array           | The list of categories for this organization phone                                                 |
+| categories                 | array           | The list of category ids for this organization phone                                               |
 | type                       | string          | The type of this phone number                                                                      |
 | isPrimary                  | boolean         | Used to set this phone number as primary for the contact                                           |
 | language                   | string          | The language for this organization phone                                                           |
@@ -4052,7 +4052,7 @@ Interface: /organizations-storage/urls
 | description                | string          | The description for this URL                                                                       |
 | language                   | string          | The language for this organization URL                                                             |
 | isPrimary                  | boolean         | Used to set this url as primary for the contact                                                    |
-| categories                 | array           | The list of categories for this organization URL                                                   |
+| categories                 | array           | The list of category ids for this organization URL                                                 |
 | notes                      | string          | The notes for this organization URL                                                                |
 | metadata                   | object          | Metadata about creation and changes to records, provided by the server (client should not provide) |
 | metadata/createdDate       | string          | Date and time when the record was created                                                          |

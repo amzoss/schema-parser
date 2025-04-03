@@ -16,7 +16,7 @@ Interface: /organizations-storage/urls
 | description                | string          | The description for this URL                                                                       |
 | language                   | string          | The language for this organization URL                                                             |
 | isPrimary                  | boolean         | Used to set this url as primary for the contact                                                    |
-| categories                 | array           | The list of categories for this organization URL                                                   |
+| categories                 | array           | The list of category ids for this organization URL                                                 |
 | notes                      | string          | The notes for this organization URL                                                                |
 | metadata                   | object          | Metadata about creation and changes to records, provided by the server (client should not provide) |
 | metadata/createdDate       | string          | Date and time when the record was created                                                          |

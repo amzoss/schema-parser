@@ -19,7 +19,7 @@ Interface: /organizations-storage/addresses
 | zipCode                    | string          | The zip code for this address                                                                      |
 | country                    | string          | The country for this address                                                                       |
 | isPrimary                  | boolean         | Used to set this address as primary for the contact                                                |
-| categories                 | array           | The list of categories for this organization address                                               |
+| categories                 | array           | The list of category ids for this organization address                                             |
 | language                   | string          | The language for this organization address                                                         |
 | metadata                   | object          | Metadata about creation and changes to records, provided by the server (client should not provide) |
 | metadata/createdDate       | string          | Date and time when the record was created                                                          |

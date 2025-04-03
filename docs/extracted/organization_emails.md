@@ -15,7 +15,7 @@ Interface: /organizations-storage/emails
 | value                      | string          | The value for this email                                                                           |
 | description                | string          | The description for this email                                                                     |
 | isPrimary                  | boolean         | Used to set this email as primary for the contact                                                  |
-| categories                 | array           | The list of categories for this organization email                                                 |
+| categories                 | array           | The list of category ids for this organization email                                               |
 | language                   | string          | The language for this organization email                                                           |
 | metadata                   | object          | Metadata about creation and changes to records, provided by the server (client should not provide) |
 | metadata/createdDate       | string          | Date and time when the record was created                                                          |

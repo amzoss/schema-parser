@@ -22,7 +22,7 @@ Interface: /organizations-storage/contacts
 | emails                     | array           | The list of emails for this contact person                                                         |
 | addresses                  | array           | The list of addresses for this contact person                                                      |
 | urls                       | array           | The list of URLs for this contact person                                                           |
-| categories                 | array           | The list of contact categories associated with this organization contact person                    |
+| categories                 | array           | The list of category ids for this organization contact person                                      |
 | inactive                   | boolean         | Used to indicate that a contact is no longer active                                                |
 | metadata                   | object          | Metadata about creation and changes to records, provided by the server (client should not provide) |
 | metadata/createdDate       | string          | Date and time when the record was created                                                          |
