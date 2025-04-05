@@ -54,7 +54,7 @@ Interface: /orders-storage/po-lines
 | eresource/createInventory     | string             | Shows what inventory objects need to be created for electronic resource                                                                     |
 | eresource/trial               | boolean            | whether or not this is a trial                                                                                                              |
 | eresource/expectedActivation  | string             | expected date the resource will be activated                                                                                                |
-| eresource/userLimit           | integer            | the concurrent user-limit                                                                                                                   |
+| eresource/userLimit           | string             | the concurrent user-limit                                                                                                                   |
 | eresource/accessProvider      | string             | UUID of the access provider                                                                                                                 |
 | eresource/license             | object             | purchase order line license record                                                                                                          |
 | eresource/license/code        | string             | license code                                                                                                                                |
