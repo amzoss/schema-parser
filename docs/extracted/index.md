@@ -3451,21 +3451,6 @@ Interface: /acquisitions-units-storage/units
 | metadata/updatedByUserId   | string          | ID of the user who last updated the record (when available)                                                   |
 | metadata/updatedByUsername | string          | Username of the user who last updated the record (when available)                                             |
 
-## Documentation: [po_alerts](po_alerts.md)
-
-### Source:
-
-Module: mod-orders-storage
-
-Interface: /orders-storage/alerts
-
-### Attributes:
-
-| Property Name   | Property Type   | Property Description      |
-|:----------------|:----------------|:--------------------------|
-| id              | string          | UUID of this alert record |
-| alert           | string          | the alert text            |
-
 ## Documentation: [po_lines](po_lines.md)
 
 ### Source:
@@ -3484,10 +3469,9 @@ Interface: /orders-storage/po-lines
 | agreementId                   | string             | The UUID format string                                                                                                                      |
 | acquisitionMethod             | string             | The UUID format string                                                                                                                      |
 | automaticExport               | boolean            | if true then line will be marked as available to export in the EDIFACT format or other format                                               |
-| alerts                        | array              | an array of alert record IDs                                                                                                                |
 | cancellationRestriction       | boolean            | whether or not there are cancellation restrictions for this purchase order line                                                             |
 | cancellationRestrictionNote   | string             | free-form notes related to cancellation restrictions                                                                                        |
-| claims                        | array              | list of claims                                                                                                                              |
+| claims                        | array              | claims associated with this purchase order line                                                                                             |
 | claimingActive                | boolean            | Indicates if there is an active claim or dispute                                                                                            |
 | claimingInterval              | integer            | Specifies the time interval, in days, within which claims or disputes must be initiated                                                     |
 | collection                    | boolean            | whether or not this purchase order line is for a collection                                                                                 |
@@ -3546,14 +3530,13 @@ Interface: /orders-storage/po-lines
 | physical/receiptDue           | ['string', 'null'] | date item should be received by                                                                                                             |
 | physical/volumes              | array              | list of volumes included to the physical material                                                                                           |
 | poLineDescription             | string             | purchase order line description                                                                                                             |
-| poLineNumber                  | string             | A human readable number assigned to this PO line                                                                                            |
+| poLineNumber                  | string             | A human readable number assigned to this PO line (assigned automatically)                                                                   |
 | publicationDate               | string             | date (year) of the material's publication                                                                                                   |
 | publisher                     | string             | publisher of the material                                                                                                                   |
 | purchaseOrderId               | string             | The UUID format string                                                                                                                      |
 | receiptDate                   | ['null', 'string'] | date the purchase order line was received                                                                                                   |
 | receiptStatus                 | string             | The purchase order line receipt status                                                                                                      |
 | renewalNote                   | string             | Renewal note for this purchase order line                                                                                                   |
-| reportingCodes                | array              | a list of reporting codes associated with this purchase order line                                                                          |
 | requester                     | string             | who requested this purchase order line                                                                                                      |
 | rush                          | boolean            | whether or not this is a rush order                                                                                                         |
 | selector                      | string             | who selected this material                                                                                                                  |
@@ -3676,8 +3659,8 @@ Interface: /orders-storage/purchase-orders
 | approved                   | boolean         | whether or not the purchase order has been approved                                                    |
 | approvedById               | string          | The UUID format string                                                                                 |
 | approvalDate               | string          | Date and time when purchase order was approved                                                         |
-| assignedTo                 | string          | UUID of the user this purchase order his assigned to                                                   |
-| billTo                     | string          | UUID of the billing address                                                                            |
+| assignedTo                 | string          | The UUID format string                                                                                 |
+| billTo                     | string          | The UUID format string                                                                                 |
 | closeReason                | object          | purchase order closing reason record                                                                   |
 | closeReason/reason         | string          | close reason description                                                                               |
 | closeReason/note           | string          | free-form notes related to closing reason                                                              |
@@ -3697,9 +3680,9 @@ Interface: /orders-storage/purchase-orders
 | ongoing/reviewPeriod       | integer         | Time prior to renewal where changes can be made to subscription                                        |
 | ongoing/renewalDate        | string          | The date this Ongoing PO's order lines were renewed                                                    |
 | ongoing/reviewDate         | string          | Date when Order has to be reviewed                                                                     |
-| shipTo                     | string          | UUID of the shipping address                                                                           |
-| template                   | string          | The ID of the order template used for this order. Applies to both PO and POL                           |
-| vendor                     | string          | UUID of the vendor record                                                                              |
+| shipTo                     | string          | The UUID format string                                                                                 |
+| template                   | string          | The UUID format string                                                                                 |
+| vendor                     | string          | The UUID format string                                                                                 |
 | workflowStatus             | string          | Composite workflow status                                                                              |
 | acqUnitIds                 | array           | acquisition unit ids associated with this purchase order                                               |
 | nextPolNumber              | integer         | Number that will be used next time a purchase order line is created                                    |
@@ -3750,22 +3733,6 @@ Interface: /orders-storage/receiving-history
 | receivingStatus     | string          | the status of this piece                                                                                           |
 | supplement          | boolean         | Whether or not this is supplementary material                                                                      |
 | title               | string          | Title of the instance this poLine is associated with                                                               |
-
-## Documentation: [po_reporting_codes](po_reporting_codes.md)
-
-### Source:
-
-Module: mod-orders-storage
-
-Interface: /orders-storage/reporting-codes
-
-### Attributes:
-
-| Property Name   | Property Type   | Property Description               |
-|:----------------|:----------------|:-----------------------------------|
-| id              | string          | UUID of this reporting code record |
-| code            | string          | a reporting code                   |
-| description     | string          | description of this reporting code |
 
 ## Documentation: [organization_addresses](organization_addresses.md)
 

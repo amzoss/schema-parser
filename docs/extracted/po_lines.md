@@ -17,10 +17,9 @@ Interface: /orders-storage/po-lines
 | agreementId                   | string             | The UUID format string                                                                                                                      |
 | acquisitionMethod             | string             | The UUID format string                                                                                                                      |
 | automaticExport               | boolean            | if true then line will be marked as available to export in the EDIFACT format or other format                                               |
-| alerts                        | array              | an array of alert record IDs                                                                                                                |
 | cancellationRestriction       | boolean            | whether or not there are cancellation restrictions for this purchase order line                                                             |
 | cancellationRestrictionNote   | string             | free-form notes related to cancellation restrictions                                                                                        |
-| claims                        | array              | list of claims                                                                                                                              |
+| claims                        | array              | claims associated with this purchase order line                                                                                             |
 | claimingActive                | boolean            | Indicates if there is an active claim or dispute                                                                                            |
 | claimingInterval              | integer            | Specifies the time interval, in days, within which claims or disputes must be initiated                                                     |
 | collection                    | boolean            | whether or not this purchase order line is for a collection                                                                                 |
@@ -79,14 +78,13 @@ Interface: /orders-storage/po-lines
 | physical/receiptDue           | ['string', 'null'] | date item should be received by                                                                                                             |
 | physical/volumes              | array              | list of volumes included to the physical material                                                                                           |
 | poLineDescription             | string             | purchase order line description                                                                                                             |
-| poLineNumber                  | string             | A human readable number assigned to this PO line                                                                                            |
+| poLineNumber                  | string             | A human readable number assigned to this PO line (assigned automatically)                                                                   |
 | publicationDate               | string             | date (year) of the material's publication                                                                                                   |
 | publisher                     | string             | publisher of the material                                                                                                                   |
 | purchaseOrderId               | string             | The UUID format string                                                                                                                      |
 | receiptDate                   | ['null', 'string'] | date the purchase order line was received                                                                                                   |
 | receiptStatus                 | string             | The purchase order line receipt status                                                                                                      |
 | renewalNote                   | string             | Renewal note for this purchase order line                                                                                                   |
-| reportingCodes                | array              | a list of reporting codes associated with this purchase order line                                                                          |
 | requester                     | string             | who requested this purchase order line                                                                                                      |
 | rush                          | boolean            | whether or not this is a rush order                                                                                                         |
 | selector                      | string             | who selected this material                                                                                                                  |

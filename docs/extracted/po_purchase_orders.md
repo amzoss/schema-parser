@@ -15,8 +15,8 @@ Interface: /orders-storage/purchase-orders
 | approved                   | boolean         | whether or not the purchase order has been approved                                                    |
 | approvedById               | string          | The UUID format string                                                                                 |
 | approvalDate               | string          | Date and time when purchase order was approved                                                         |
-| assignedTo                 | string          | UUID of the user this purchase order his assigned to                                                   |
-| billTo                     | string          | UUID of the billing address                                                                            |
+| assignedTo                 | string          | The UUID format string                                                                                 |
+| billTo                     | string          | The UUID format string                                                                                 |
 | closeReason                | object          | purchase order closing reason record                                                                   |
 | closeReason/reason         | string          | close reason description                                                                               |
 | closeReason/note           | string          | free-form notes related to closing reason                                                              |
@@ -36,9 +36,9 @@ Interface: /orders-storage/purchase-orders
 | ongoing/reviewPeriod       | integer         | Time prior to renewal where changes can be made to subscription                                        |
 | ongoing/renewalDate        | string          | The date this Ongoing PO's order lines were renewed                                                    |
 | ongoing/reviewDate         | string          | Date when Order has to be reviewed                                                                     |
-| shipTo                     | string          | UUID of the shipping address                                                                           |
-| template                   | string          | The ID of the order template used for this order. Applies to both PO and POL                           |
-| vendor                     | string          | UUID of the vendor record                                                                              |
+| shipTo                     | string          | The UUID format string                                                                                 |
+| template                   | string          | The UUID format string                                                                                 |
+| vendor                     | string          | The UUID format string                                                                                 |
 | workflowStatus             | string          | Composite workflow status                                                                              |
 | acqUnitIds                 | array           | acquisition unit ids associated with this purchase order                                               |
 | nextPolNumber              | integer         | Number that will be used next time a purchase order line is created                                    |
