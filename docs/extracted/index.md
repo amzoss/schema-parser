@@ -3584,14 +3584,14 @@ Interface: /orders-storage/order-templates
 
 ### Attributes:
 
-| Property Name       | Property Type   | Property Description            |
-|:--------------------|:----------------|:--------------------------------|
-| id                  | string          | The UUID format string          |
-| templateName        | string          | The order template name         |
-| templateCode        | string          | The order template code         |
-| templateDescription | string          | The order template description  |
-| hiddenFields        | object          | Fields for hidden from end user |
-| categoryId          | string          | The UUID format string          |
+| Property Name       | Property Type   | Property Description               |
+|:--------------------|:----------------|:-----------------------------------|
+| id                  | string          | The UUID format string             |
+| templateName        | string          | The order template name            |
+| templateCode        | string          | The order template code            |
+| templateDescription | string          | The order template description     |
+| hiddenFields        | object          | Fields for hidden from end user    |
+| categoryIds         | array           | UUIDs of order template categories |
 
 ## Documentation: [po_pieces](po_pieces.md)
 
