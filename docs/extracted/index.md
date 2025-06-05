@@ -3665,6 +3665,7 @@ Interface: /orders-storage/purchase-orders
 | closeReason                | object          | purchase order closing reason record                                                                   |
 | closeReason/reason         | string          | close reason description                                                                               |
 | closeReason/note           | string          | free-form notes related to closing reason                                                              |
+| openedById                 | string          | The UUID format string                                                                                 |
 | dateOrdered                | string          | Date and time when purchase order was opened                                                           |
 | manualPo                   | boolean         | if true, order cannot be sent automatically, e.g. via EDI                                              |
 | notes                      | array           | free-form notes associated with this purchase order                                                    |
@@ -3690,6 +3691,7 @@ Interface: /orders-storage/purchase-orders
 | tags                       | object          | List of simple tags that can be added to an object                                                     |
 | tags/tagList               | array           | List of tags                                                                                           |
 | customFields               | object          | Object that contains custom field                                                                      |
+| fiscalYearId               | string          | The UUID format string                                                                                 |
 | metadata                   | object          | Metadata about creation and changes to records, provided by the server (client should not provide)     |
 | metadata/createdDate       | string          | Date and time when the record was created                                                              |
 | metadata/createdByUserId   | string          | ID of the user who created the record (when available)                                                 |
