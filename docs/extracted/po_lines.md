@@ -97,6 +97,7 @@ Interface: /orders-storage/po-lines
 | vendorDetail/noteFromVendor   | string             | free-form notes from the vendor                                                                                                             |
 | vendorDetail/vendorAccount    | string             | the accound number on the vendor's end associated with this purchase order line                                                             |
 | vendorDetail/referenceNumbers | array              | Reference number items array                                                                                                                |
+| suppressInstanceFromDiscovery | boolean            | Records the fact that the record should not be displayed in a discovery system                                                              |
 | customFields                  | object             | Object that contains custom field                                                                                                           |
 | metadata                      | object             | Metadata about creation and changes to records, provided by the server (client should not provide)                                          |
 | metadata/createdDate          | string             | Date and time when the record was created                                                                                                   |
