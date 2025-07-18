@@ -23,6 +23,7 @@ Interface: /voucher-storage/vouchers
 | invoiceCurrency            | string          | The currency in which invoice was originally defined                                                                                                                |
 | invoiceId                  | string          | The UUID format string                                                                                                                                              |
 | exchangeRate               | number          | Exchange rate used to generate transaction                                                                                                                          |
+| operationMode              | string          | Operation mode performed on the exchange rate                                                                                                                       |
 | exportToAccounting         | boolean         | Export this payment record to a financial system                                                                                                                    |
 | status                     | string          | Status of the voucher                                                                                                                                               |
 | systemCurrency             | string          | The currency in which the voucher was paid                                                                                                                          |
