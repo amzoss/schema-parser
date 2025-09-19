@@ -25,6 +25,7 @@ Interface: /orders-storage/pieces
 | receivingTenantId          | string          | Receiving tenant for ECS-enabled clusters                                                                              |
 | displayOnHolding           | boolean         | Whether or not receiving history should be displayed in holding record view                                            |
 | displayToPublic            | boolean         | Whether or not the piece data should display to patrons at point of receipt                                            |
+| sequenceNumber             | integer         | The sequence number of this piece to determine the order in which it appears                                           |
 | enumeration                | string          | Enumeration is the descriptive information for the numbering scheme of a serial. Synchronized with inventory item.     |
 | chronology                 | string          | Chronology is the descriptive information for the dating scheme of a serial. Synchronized with inventory item.         |
 | barcode                    | string          | Barcode is the descriptive information for the barcode of a serial. Synchronized with inventory item.                  |
